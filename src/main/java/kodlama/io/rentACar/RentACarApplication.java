@@ -27,7 +27,7 @@ public class RentACarApplication {
     }
 
 
-    @ExceptionHandler
+   @ExceptionHandler
     @ResponseStatus(code = HttpStatus.BAD_REQUEST)
 
     public ProblemDetails handleBusinessException(BusinessException businessException) {
@@ -35,6 +35,9 @@ public class RentACarApplication {
         problemDetails.setMesaj(businessException.getMessage());
         return problemDetails;
     }
+
+
+
 
     @ExceptionHandler
     @ResponseStatus(code = HttpStatus.BAD_REQUEST)

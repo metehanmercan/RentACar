@@ -1,6 +1,7 @@
 package kodlama.io.rentACar.business.requests;
 
 
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -23,6 +24,7 @@ public class CreateModelRequest {
 
     @NotNull
     @NotBlank
+
     private int brandId;
 
 }
